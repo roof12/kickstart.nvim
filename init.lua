@@ -1,3 +1,7 @@
+vim.o.cursorline = true
+-- vim.o.cursorcolumn = true
+vim.o.confirm = true
+
 --[[
 
 =====================================================================
@@ -64,6 +68,8 @@ vim.opt.rtp:prepend(lazypath)
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
+
+  'preservim/nerdcommenter',
 
   -- Git related plugins
   'tpope/vim-fugitive',
@@ -149,6 +155,11 @@ require('lazy').setup({
         component_separators = '|',
         section_separators = '',
       },
+      sections = {
+        lualine_a = {
+          'buffers'
+        }
+      }
     },
   },
 
@@ -426,9 +437,9 @@ end
 --  the `settings` field of the server config. You must look up that documentation yourself.
 local servers = {
   -- clangd = {},
-  -- gopls = {},
-  -- pyright = {},
-  -- rust_analyzer = {},
+  gopls = {},
+  pyright = {},
+  rust_analyzer = {},
   -- tsserver = {},
 
   lua_ls = {
@@ -513,3 +524,5 @@ cmp.setup {
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+--
+--
