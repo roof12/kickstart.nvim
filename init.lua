@@ -4,6 +4,8 @@ vim.o.cursorline = true
 -- prompt on exit instead of erroring when files are unvisited
 vim.o.confirm = true
 
+vim.o.autochdir = true
+
 --[[
 
 =====================================================================
