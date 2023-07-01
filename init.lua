@@ -12,6 +12,8 @@ vim.o.autochdir = true
 vim.opt.listchars:append "space:⋅"
 vim.opt.listchars:append "eol:↴"
 
+vim.opt.whichwrap:append "<,>,[,]"
+
 --[[
 
 =====================================================================
