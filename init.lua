@@ -74,6 +74,7 @@ require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
   'preservim/nerdcommenter',
+  'preservim/nerdtree',
 
   -- Git related plugins
   'tpope/vim-fugitive',
