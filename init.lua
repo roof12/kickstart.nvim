@@ -6,6 +6,12 @@ vim.o.confirm = true
 
 vim.o.autochdir = true
 
+-- display of whitespace is off by default
+-- enable it on demand with:
+-- :set list
+vim.opt.listchars:append "space:⋅"
+vim.opt.listchars:append "eol:↴"
+
 --[[
 
 =====================================================================
